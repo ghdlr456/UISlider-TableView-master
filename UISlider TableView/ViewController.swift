@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func sliderMoved(_ sender: Any) {
         myTableView.reloadData()
+        myLabel.text = String(Int(mySlider.value))
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
